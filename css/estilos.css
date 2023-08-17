@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+
+
+body {
+    background-image: url("https://fondosmil.com/fondo/4990.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+    font-family: 'Preahvihear', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:  #8fcc60; 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .navbar {
+    background-color: #000000; /* Verde brillante */
+  }
+  
+  .navbar-brand {
+    color: #000000; 
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000000; 
+  }
+  
+  /* títulos y texto */
+  h1, h2, h3 {
+    color: #4caf50; 
+  }
+  
+  p {
+    color: #000000; 
+  }
+
+/*imagen home */
+  .decoracion-image {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 10px;
+  }
+  
+  /* enlaces */
+  a {
+    color: #000000; 
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* contenedor de contenido */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  
+  .fruta-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  
+  .fruta-content {
+    grid-column: 1 / span 1;
+  }
+  
+  .fruta-image {
+    grid-column: 2 / span 1;
+    
+    
+  }
+  
+  .fruta-image img {
+   width: 500px;
+   height: 500px;
+   padding: 10%;
+   
+  }
+  /* Media Queries para responsive  */
+  
+  @media screen and (max-width: 768px) {
+    .fruta-container {
+      grid-template-columns: 1fr; 
+    }
+    
+    .fruta-image {
+      grid-column: 1 / span 1;
+      margin-top: 20px; 
+     
+    }
+  }
